@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
 
 const CourseForm = (props) => {
 	const classes = useStyles();
+	const [loaded, setLoaded] = useState(false);
 	const [values, setValues] = useState({
 		name: '',
 		description: '',
@@ -48,8 +49,14 @@ const CourseForm = (props) => {
 
 		create(formData, _id, token).then(res => {
 			console.log(res.data);
+			setTimeout(() => {
+				setLoaded(true);	
+			}, 1000);			
+		});
+	}
 
-		})
+	if(loaded){
+		return <Redirect to='/courses' />
 	}
 
 	return(
