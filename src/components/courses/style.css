@@ -1,0 +1,10 @@
+.btn{
+	background-color: #FF5733;
+	border: none;
+	transition: 1s;
+}
+
+.btn:hover{
+	background-color: #FB3106;
+}
+

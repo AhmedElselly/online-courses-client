@@ -1,0 +1,14 @@
+.course-menu{
+	background: black;
+	height: 100vh;
+	/*max-width: 50%;*/
+	color: white;
+	/*text-align: center;*/
+}
+
+.course-menu li {
+	cursor: pointer;
+	/*width: 100%;*/
+	text-transform: uppercase;
+	font-weight: bold;
+}
